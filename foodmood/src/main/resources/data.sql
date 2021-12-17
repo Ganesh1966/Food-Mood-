@@ -35,4 +35,3 @@ INSERT INTO FOOD(food_id,food_name,image_url,foodmood_id)
 VALUES (7,'Sliced Banana and Peanut Butter','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdiNo6Toy33pTzoli5sfX8aegEq7oeMegwQ&usqp=CAU',4);
 
 
-INSERT INTO()

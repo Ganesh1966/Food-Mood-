@@ -15,6 +15,7 @@ public class Instruction {
     private Long instructId;
 
     private String instruction;
+    private int  instruction_no;
 
     @ManyToOne
     @JoinColumn(name ="recipe_id")

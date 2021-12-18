@@ -21,5 +21,8 @@ public class Food {
     @JoinColumn(name = "foodmood_id")
     private FoodMoods foodMoods;
 
+    @OneToOne
+    @JoinColumn(name = "recipe_id")
+    private Recipe recipe;
 
 }

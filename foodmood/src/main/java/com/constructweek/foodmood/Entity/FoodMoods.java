@@ -14,7 +14,7 @@ public class FoodMoods {
      private Long foodMoodId;
      private String name;
 
-     @OneToMany(mappedBy = "food_mood", fetch = FetchType.EAGER)
+     @OneToMany(mappedBy = "foodMoods", fetch = FetchType.EAGER)
      private List<Food> foodItems;
 
 }

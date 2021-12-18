@@ -2,6 +2,8 @@ package com.constructweek.foodmood.Service;
 
 import com.constructweek.foodmood.Entity.Food;
 import com.constructweek.foodmood.Entity.FoodMoods;
+import com.constructweek.foodmood.Entity.Ingredient;
+import com.constructweek.foodmood.Entity.Recipe;
 import com.constructweek.foodmood.Repository.FoodMoodRepository;
 import com.constructweek.foodmood.Repository.FoodRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +33,5 @@ public class FoodService {
           FoodMoods foodMood  =  foodMoodRepository.getFoodItemsbyMood(moodname);
           return foodRepository.getFoodsBymoodId(foodMood.getFoodMoodId());
       }
-
-
 
 }

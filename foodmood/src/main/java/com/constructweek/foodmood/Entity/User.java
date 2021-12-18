@@ -1,5 +1,6 @@
 package com.constructweek.foodmood.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.Entity;
@@ -16,9 +17,9 @@ import javax.persistence.Id;
 public class User {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    int userId;
-    String userName;
-    String password;
-    String email;
-    String newPassword;
+    private int userId;
+    private String userName;
+    private String password;
+    private String email;
+    private String newPassword;
 }

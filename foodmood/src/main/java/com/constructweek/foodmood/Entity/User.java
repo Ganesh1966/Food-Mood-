@@ -15,9 +15,10 @@ import javax.persistence.Id;
 @Entity
 public class User {
     @Id
-//    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy= GenerationType.AUTO)
     int userId;
     String userName;
     String password;
     String email;
+    String newPassword;
 }

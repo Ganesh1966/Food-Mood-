@@ -12,11 +12,12 @@ import javax.persistence.*;
 public class Instruction {
 
     @Id
+    @JsonIgnore
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long instructId;
-
-    private String instruction;
     private int  instruction_no;
+    private String instruction;
+
 
     @ManyToOne
     @JoinColumn(name ="recipe_id")

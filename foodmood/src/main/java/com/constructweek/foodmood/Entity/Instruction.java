@@ -1,6 +1,7 @@
 package com.constructweek.foodmood.Entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.springframework.context.annotation.EnableMBeanExport;
 
@@ -19,6 +20,7 @@ public class Instruction {
 
     @ManyToOne
     @JoinColumn(name ="recipe_id")
+    @JsonIgnore
     private Recipe recipe;
 
 }

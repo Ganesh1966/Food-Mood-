@@ -1,6 +1,7 @@
 package com.constructweek.foodmood.Entity;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -16,10 +17,10 @@ public class Recipe {
 
     private String preptime;
 
-    @OneToMany
+    @OneToMany(mappedBy = "recipe")
     private List<Ingredient> ingredient;
 
-    @OneToMany
+    @OneToMany(mappedBy = "recipe")
     private  List<Instruction> instructions;
 
 

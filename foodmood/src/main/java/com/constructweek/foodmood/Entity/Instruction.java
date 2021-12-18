@@ -16,6 +16,7 @@ public class Instruction {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long instructId;
     private int  instruction_no;
+    @Column( length = 100000 )
     private String instruction;
 
 

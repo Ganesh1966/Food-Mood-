@@ -94,13 +94,54 @@ INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
 VALUES (1113,'POTATO','3 ',111);
 
 INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
-VALUES (1121,'SALT','1/2 SPOONS',112);
+VALUES (1114,'GREEN PEAS','1/2 CUP ',111);
 
 INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
-VALUES (1122,'RAVA','5 CUP',112);
+VALUES (1115,'CHOPPED CAULIFLOWER','3/4 CUP ',111);
 
 INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
-VALUES (1123,'ONION','3 ',112);
+VALUES (1116,'CHOPPED CAPSICUM','1/2 CUP ',111);
+
+INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
+VALUES (1118,'ONION','1 LARGE ',111);
+
+INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
+VALUES (1119,'RED CHILLI POWDER','1 and 1/2 SPOON',111);
+
+INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
+VALUES (1120,'TURMERIC POWDER','1/4 SPOON ',111);
+
+
+INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
+VALUES (1121,'GRAM FLOUR','1 CUP',112);
+
+INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
+VALUES (1122,'RAVA','1 TABLESPOON',112);
+
+INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
+VALUES (1123,'LEMON JUICE','1 TEASPOON ',112);
+
+INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
+VALUES (1124,'GINGER-CHILLI PASTE','1 TEASPOON ',112);
+
+INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
+VALUES (1125,'CURD','1 CUP ',112);
+
+INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
+VALUES (1126,'WATER','3/4 CUP ',112);
+
+INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
+VALUES (1127,'SALT','1/2 TEASPOON ',112);
+
+INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
+VALUES (1128,'ENO FRUIT SALT','1 TEASPOON ',112);
+
+INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
+VALUES (1129,'OIL','1 TEASPOON ',112);
+
+INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
+VALUES (1130,'ASAFOETIDA','1 PINCH ',112);
+
 
 INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
 VALUES (1131,'SALT','1/2 SPOONS',113);
@@ -193,22 +234,106 @@ INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
 VALUES (6123,'POTATO','3 ',612);
 
 INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
-VALUES (11111,'GET A BUN',1,111);
+VALUES (11111,'Get a Bun',1,111);
 
 INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
-VALUES (11112,'MAKE ONION AND TOMOTO GRAVY',2,111);
+VALUES (11112,'Take all the vegetables listed in the ingredients. Wash them in running water and cut them into small pieces.
+',2,111);
 
 INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
-VALUES (11113,'HEAT FOR 15 MINUTES',3,111);
+VALUES (11113,'Transfer chopped potato, cauliflower, carrot and green peas into a 2-3 liter capacity pressure cooker. Add 1/2 cup water and salt to taste.',3,111);
 
 INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
-VALUES (11121,'GET A RAVA',1,112);
+VALUES (19911,'Mash the boiled vegetables gently with potato masher or using the backside of a large spoon until little chunky texture. You can mash cooked veggies into a texture you like – with small chunks or smooth with no chunks at all.',4,111);
+
 
 INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
-VALUES (11122,'MAKE ONION AND TOMOTO GRAVY',2,112);
+VALUES (19912,'Heat 2-tablespoons oil and 2-tablespoons butter together in a pan over medium flame. Add chopped onion and ginger-garlic paste. Sauté until onion turns translucent.',5,111);
+
 
 INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
-VALUES (11123,'HEAT FOR 15 MINUTES',3,112);
+VALUES (19913,'Add chopped capsicum, chopped tomato and salt.',6,111);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (19914,'Sauté until tomatoes and capsicum turn soft.',7,111);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (19915,'Add 1½ teaspoons red chilli powder, 1/4 teaspoon turmeric powder, 1-teaspoon cumin-coriander powder and 1-teaspoon readymade pav bhaji masala powder.',8,111);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (19916,'Stir and cook for a minute.',9,111);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (19917,'Add 3/4 cup water, mix well and cook for 2-3 minutes.',10,111);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (19918,'Add boiled and mashed vegetables and 1-teaspoon lemon juice.',11,111);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (19919,'Mix well and cook for 4-5 minutes. Taste for the salt at this stage and add more if required. Turn off the flame. Add chopped coriander leaves and mix well. Bhaji is ready for serving.',12,111);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (19920,'Cut the pav buns horizontally into halves. Heat tava over medium flame. Add a tablespoon of butter and place halved pav buns over it. Shallow fry both sides until light brown spots appear, it will take around 30 seconds for each side to turn light brown. Transfer to the plate. Shallow fry remaining pavs.',13,111);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (19921,'Transfer prepared bhaji to a serving bowl and garnish with a cube of butter. Serve hot with butter roasted pav, sliced onion and lemon wedges.',14,111);
+
+
+
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (1111121,'Take all ingredients to prepare batter. Pour approx. 2-3 cups water in steamer at bottom and heat it over medium flame. Make sure that steamer is at least 4-5 minutes heated before placing the plates (filled with batter) in it. Grease 2 small plates or thalis (4-5 inch diameter) using 1-teaspoon oil.
+',1,112);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (1111122,'Take 1 cup gram flour, 1 tablespoon semolina(sooji/rava), 1½ teaspoons lemon juice, 1 teaspoons green chilli-ginger paste, 1/4 cup curd, 3/4 cup water and salt in a bowl. Mix them properly into smooth batter. Make sure that there are no lumps.
+',2,112);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (1111123,'Add 1 teaspoon fruit salt in batter and stir in one direction for approx. 1 minute. You will notice its size would increase to almost double.',3,112);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (1111124,'Now, pour batter immediately into each greased plate and fill it upto 1/2-inch thickness.',4,112);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (1111125,'Place plates in steamer and steam for 10-12 minutes over medium flame.',5,112);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (1111126,'After 10-12 minutes, insert a knife or toothpick into dhokla and check if it comes out clean. If it does, then it is ready otherwise cook 2-3 minutes more.
+',6,112);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (1111127,'Takeout plates from steamer and let them cool for few minutes. Cut fluffy khaman dhokla into small squares using knife.',7,112);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (1111128,'Heat 2 tablespoons oil in a small pan or tempering pan. Add1/2 teaspoon mustard seeds and a pinch of asafoetida (hing). When seeds begin to crackle, add 1/2 teaspoon cumin seeds, 1 teaspoon sesame seeds, 10-15 curry leaves and 4 green chillies. Sauté them for few seconds.',8,112);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (1111129,'Add 1/3 cup water and 1 tablespoon sugar and bring it to a boil; let it cook for a minute over high flame. Tempering(tadka) is ready, pour it over dhoklas and toss gently until each dhokla is coated well with tempering.',9,112);
+
+
+INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
+VALUES (1111130,'Garnish with 2 tablespoons chopped coriander leaves and 2 tablespoons grated coconut. Serve with green coriander chutney.
+',10,112);
+
+
 
 INSERT INTO INSTRUCTION (INSTRUCT_ID,INSTRUCTION,INSTRUCTION_NO,RECIPE_ID)
 VALUES (11131,'GET A DOSA BATTER',1,113);

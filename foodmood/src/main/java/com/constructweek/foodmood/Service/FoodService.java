@@ -6,6 +6,7 @@ import com.constructweek.foodmood.Entity.Ingredient;
 import com.constructweek.foodmood.Entity.Recipe;
 import com.constructweek.foodmood.Repository.FoodMoodRepository;
 import com.constructweek.foodmood.Repository.FoodRepository;
+import com.constructweek.foodmood.Repository.RecipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,11 +22,17 @@ public class FoodService {
       @Autowired
       FoodMoodRepository foodMoodRepository;
 
+      @Autowired
+      RecipeRepository recipeRepository;
 
-      public Food addFood(Food food) {
-
+      public String addFood(Food food,String moodname) {
+          FoodMoods foodMood  =  foodMoodRepository.getFoodItemsbyMood(moodname);
+          Recipe recipe = new Recipe();
+          food.setRecipe(recipe);
+          food.setFoodMoods(foodMood);
+          recipeRepository.save(recipe);
           foodRepository.save(food);
-          return food;
+          return "food Added";
       }
 
       public List<Food> getFoodsbyMood(String moodname ){

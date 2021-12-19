@@ -43,46 +43,46 @@ VALUES (612,'40 minutes');
 
 
 INSERT INTO FOOD(food_id,food_name,image_url,foodmood_id,recipe_id)
-VALUES (1,'PAAV BHAJI','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT54vxH2qFQaaEuX_oTzFOMfHrNrcRYg1JA_w&usqp=CAU',1,111);
+VALUES (3001,'PAAV BHAJI','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT54vxH2qFQaaEuX_oTzFOMfHrNrcRYg1JA_w&usqp=CAU',1,111);
 
 INSERT INTO FOOD(food_id,food_name,image_url,foodmood_id,recipe_id)
-VALUES (2,'DHOKLA','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVfoCePSRQz49hiSVzTp9Po4yCF0EyojeKKw&usqp=CAU',1,112);
+VALUES (3002,'DHOKLA','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVfoCePSRQz49hiSVzTp9Po4yCF0EyojeKKw&usqp=CAU',1,112);
 
 INSERT INTO FOOD(food_id,food_name,image_url,foodmood_id,recipe_id)
-VALUES (3,'IDLI','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHZssxU5c8QefRVTXp9Ta_9aGvDdr5ZyAiAQ&usqp=CAU',1,113);
+VALUES (3003,'IDLI','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHZssxU5c8QefRVTXp9Ta_9aGvDdr5ZyAiAQ&usqp=CAU',1,113);
 
 INSERT INTO FOOD(food_id,food_name,image_url,foodmood_id,recipe_id)
-VALUES (4,'PASTA SALADS','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt3y5QF9d6FpDrZKCMVO4s8BWVaqXuYh_VBw&usqp=CAU',3,311);
+VALUES (3004,'PASTA SALADS','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt3y5QF9d6FpDrZKCMVO4s8BWVaqXuYh_VBw&usqp=CAU',3,311);
 
 INSERT INTO FOOD(food_id,food_name,image_url,foodmood_id,recipe_id)
-VALUES (5,'Muffins','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS29SuQHRYcBpCKRMY5odSQHzaJYlHzrSv4ng&usqp=CAU',3,312);
+VALUES (3005,'Muffins','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS29SuQHRYcBpCKRMY5odSQHzaJYlHzrSv4ng&usqp=CAU',3,312);
 
 INSERT INTO FOOD(food_id,food_name,image_url,foodmood_id,recipe_id)
-VALUES (6,'Oats Meal','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6u5lJplb1FpuORrSRlqdTCaLC_ASA_5_JYA&usqp=CAU',4,411);
+VALUES (3006,'Oats Meal','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6u5lJplb1FpuORrSRlqdTCaLC_ASA_5_JYA&usqp=CAU',4,411);
 
 INSERT INTO FOOD(food_id,food_name,image_url,foodmood_id,recipe_id)
-VALUES (7,'Sliced Banana and Peanut Butter','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdiNo6Toy33pTzoli5sfX8aegEq7oeMegwQ&usqp=CAU',4,412);
+VALUES (3007,'Sliced Banana and Peanut Butter','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdiNo6Toy33pTzoli5sfX8aegEq7oeMegwQ&usqp=CAU',4,412);
 
 INSERT INTO FOOD(food_id,food_name,image_url,foodmood_id,recipe_id)
-VALUES (8,'Omlet','http://3.bp.blogspot.com/-OExKhSnyXZA/TYdNMY2kXXI/AAAAAAAAKBg/aPl-mRtG9Sk/s1600/Cheese%2Bomlate5P1010135.jpg',4,413);
+VALUES (3008,'Omlet','http://3.bp.blogspot.com/-OExKhSnyXZA/TYdNMY2kXXI/AAAAAAAAKBg/aPl-mRtG9Sk/s1600/Cheese%2Bomlate5P1010135.jpg',4,413);
 
 INSERT INTO FOOD(food_id,food_name,image_url,foodmood_id,recipe_id)
-VALUES (9,'Upma','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5R9e22CqIgL_QC1T0Z-RqCPNh_pgmOeJ3sw&usqp=CAU',2,211);
+VALUES (3009,'Upma','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5R9e22CqIgL_QC1T0Z-RqCPNh_pgmOeJ3sw&usqp=CAU',2,211);
 
 INSERT INTO FOOD(food_id,food_name,image_url,foodmood_id,recipe_id)
-VALUES (10,'Semya Upma','https://www.sandyathome.com/wp-content/uploads/2016/11/IMG_1072-750x500.jpg',2,212);
+VALUES (3010,'Semya Upma','https://www.sandyathome.com/wp-content/uploads/2016/11/IMG_1072-750x500.jpg',2,212);
 
 INSERT INTO FOOD(food_id,food_name,image_url,foodmood_id,recipe_id)
-VALUES (11,'sandwiches','https://www.oetker.in/Recipe/Recipes/oetker.in/in-en/sandwiches/image-thumb__52604__RecipeDetail/sandwicheto.jpg',5,511);
+VALUES (3011,'sandwiches','https://www.oetker.in/Recipe/Recipes/oetker.in/in-en/sandwiches/image-thumb__52604__RecipeDetail/sandwicheto.jpg',5,511);
 
 INSERT INTO FOOD(food_id,food_name,image_url,foodmood_id,recipe_id)
-VALUES (12,'Burger','https://www.tasteofhome.com/wp-content/uploads/2020/03/Smash-Burgers_EXPS_TOHcom20_246232_B10_06_10b.jpg',5,512);
+VALUES (3012,'Burger','https://www.tasteofhome.com/wp-content/uploads/2020/03/Smash-Burgers_EXPS_TOHcom20_246232_B10_06_10b.jpg',5,512);
 
 INSERT INTO FOOD(food_id,food_name,image_url,foodmood_id,recipe_id)
-VALUES (13,'Biryani','https://simmertoslimmer.com/wp-content/uploads/2018/01/South-Indian-chicken-biryani-500x500.jpg',6,611);
+VALUES (3013,'Biryani','https://simmertoslimmer.com/wp-content/uploads/2018/01/South-Indian-chicken-biryani-500x500.jpg',6,611);
 
 INSERT INTO FOOD(food_id,food_name,image_url,foodmood_id,recipe_id)
-VALUES (14,'Tandoori Chicken','https://www.whiskaffair.com/wp-content/uploads/2021/04/Tandoori-Chicken-2-3-500x375.jpg',6,612);
+VALUES (3014,'Tandoori Chicken','https://www.whiskaffair.com/wp-content/uploads/2021/04/Tandoori-Chicken-2-3-500x375.jpg',6,612);
 
 INSERT INTO INGREDIENT(ING_ID,INGREDIENT_NAME,QUANTITY,RECIPE_ID)
 VALUES (1111,'SALT','1/2 SPOONS',111);

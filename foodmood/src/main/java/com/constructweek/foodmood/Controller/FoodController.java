@@ -20,9 +20,10 @@ public class FoodController {
      @Autowired
     RecipeService recipeService;
 
-     @PostMapping("/addFood")
-     public Food addFood(@RequestBody Food food){
-         return  foodService.addFood(food);
+     @PostMapping("/addFood/{food_mood}")
+     public String addFood(@RequestBody Food food,@PathVariable("food_mood") String foodMood){
+
+         return  foodService.addFood(food,foodMood);
      }
 
 

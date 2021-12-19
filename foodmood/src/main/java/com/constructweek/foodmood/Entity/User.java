@@ -19,7 +19,6 @@ public class User {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private int userId;
     private String userName;
-    @JsonIgnore
     private String password;
     private String email;
     private String newPassword;

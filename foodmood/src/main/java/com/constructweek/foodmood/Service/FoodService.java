@@ -25,14 +25,14 @@ public class FoodService {
       @Autowired
       RecipeRepository recipeRepository;
 
-      public String addFood(Food food,String moodname) {
+      public Food addFood(Food food,String moodname) {
           FoodMoods foodMood  =  foodMoodRepository.getFoodItemsbyMood(moodname);
           Recipe recipe = new Recipe();
           food.setRecipe(recipe);
           food.setFoodMoods(foodMood);
           recipeRepository.save(recipe);
           foodRepository.save(food);
-          return "food Added";
+          return food ;
       }
 
       public List<Food> getFoodsbyMood(String moodname ){

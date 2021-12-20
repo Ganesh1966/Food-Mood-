@@ -20,9 +20,10 @@ public class FoodController {
      @Autowired
     RecipeService recipeService;
 
-     @PostMapping("/addFood")
-     public Food addFood(@RequestBody Food food){
-         return  foodService.addFood(food);
+     @PostMapping("/addFood/{food_mood}")
+     public Food addFood(@RequestBody Food food,@PathVariable("food_mood") String foodMood){
+
+         return  foodService.addFood(food,foodMood);
      }
 
 
@@ -39,6 +40,17 @@ public class FoodController {
          List<Ingredient> ingredientList = recipeService.getIngredients(foodId);
          return  ingredientList;
     }
+
+    @PostMapping("/addIngredients/{food_id}")
+    public String addIngredients(@RequestBody Ingredient ingredient ,@PathVariable("food_id") Long foodId){
+     return recipeService.addIngredient(ingredient,foodId);
+    }
+
+    @PostMapping("/addInstruction/{food_id}")
+    public String addInstruction(@RequestBody Instruction instruction ,@PathVariable("food_id") Long foodId){
+        return recipeService.addInstruction(instruction,foodId);
+    }
+
 
     @GetMapping("/getInstructions/{food_id}")
     public  List<Instruction> getInstructions(@PathVariable("food_id") Long foodId){

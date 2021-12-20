@@ -50,4 +50,24 @@ public class RecipeService {
         return instructionRepository.getInstructionsByRecipeId(recipeId);
     }
 
+    public String addIngredient(Ingredient ingredient,Long foodId){
+        Food food = foodRepository.findById(foodId).get();
+
+        Recipe recipe = food.getRecipe();
+
+        ingredient.setRecipe(recipe);
+
+        ingredientRepository.save(ingredient);
+        return "Ingredient added";
+    }
+
+    public String addInstruction(Instruction instruction,Long foodId){
+        Food food = foodRepository.findById(foodId).get();
+        Recipe recipe = food.getRecipe();
+        instruction.setRecipe(recipe);
+
+        instructionRepository.save(instruction);
+
+        return "Instruction Added";
+    }
 }

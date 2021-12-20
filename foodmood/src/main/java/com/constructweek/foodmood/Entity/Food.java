@@ -2,6 +2,7 @@ package com.constructweek.foodmood.Entity;
 
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 
@@ -23,7 +24,7 @@ public class Food {
     private FoodMoods foodMoods;
 
     @OneToOne
-    @JsonBackReference
+    @JsonIgnore
     @JoinColumn(name = "recipe_id")
     private Recipe recipe;
 

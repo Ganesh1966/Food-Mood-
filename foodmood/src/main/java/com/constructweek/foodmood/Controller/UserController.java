@@ -40,7 +40,7 @@ public class UserController{
         return userService.updatePassword(user);
     }
 
-    @GetMapping("/user/delete")
+    @DeleteMapping("/user/delete")
     public ResponseEntity<ResponseDto> deleteUser(@RequestBody User user){
         return userService.deleteUser(user);
     }

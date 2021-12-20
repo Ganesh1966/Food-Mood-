@@ -7,9 +7,8 @@ import lombok.ToString;
 @Getter
 @Setter
 public class ResponseDto {
-    String response;
+    private String response;
     public ResponseDto(String response) {
         this.response = response;
     }
-
 }

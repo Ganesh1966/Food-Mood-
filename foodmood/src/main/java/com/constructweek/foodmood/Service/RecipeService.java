@@ -50,24 +50,35 @@ public class RecipeService {
         return instructionRepository.getInstructionsByRecipeId(recipeId);
     }
 
-    public String addIngredient(Ingredient ingredient,Long foodId){
-        Food food = foodRepository.findById(foodId).get();
+    public boolean addIngredient(Ingredient ingredient,Long foodId){
+        try {
+            Food food = foodRepository.findById(foodId).get();
 
-        Recipe recipe = food.getRecipe();
+            Recipe recipe = food.getRecipe();
 
-        ingredient.setRecipe(recipe);
+            ingredient.setRecipe(recipe);
 
-        ingredientRepository.save(ingredient);
-        return "Ingredient added";
+            ingredientRepository.save(ingredient);
+            return  true;
+        }
+        catch (Exception e){
+            System.out.println(e);
+            return  false;
+        }
     }
 
-    public String addInstruction(Instruction instruction,Long foodId){
-        Food food = foodRepository.findById(foodId).get();
-        Recipe recipe = food.getRecipe();
-        instruction.setRecipe(recipe);
+    public boolean addInstruction(Instruction instruction,Long foodId){
+       try{
+           Food food = foodRepository.findById(foodId).get();
+           Recipe recipe = food.getRecipe();
+           instruction.setRecipe(recipe);
 
-        instructionRepository.save(instruction);
-
-        return "Instruction Added";
+           instructionRepository.save(instruction);
+           return true;
+       }
+         catch (Exception e){
+             System.out.println(e);
+             return  false;
+         }
     }
 }

@@ -1,8 +1,11 @@
 package com.constructweek.foodmood.Service;
 
+import com.constructweek.foodmood.Dto.ResponseDto;
 import com.constructweek.foodmood.Entity.User;
 import com.constructweek.foodmood.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,55 +16,60 @@ public class UserService {
     @Autowired
     UserRepository userRepository;
 
-    public String addUser(User user){
+
+    public ResponseEntity<ResponseDto> addUser(User user){
         User temp = userRepository.findByEmail(user.getEmail());
         if(temp == null){
             userRepository.save(user);
-            return "Account created succesfully";
+            return new ResponseEntity<>(new ResponseDto("Account created succesfully"), HttpStatus.CREATED);
         }
         else{
-            return "Email already exists";
+            return new ResponseEntity<>(new ResponseDto("Email already exists"), HttpStatus.FORBIDDEN);
         }
     }
 
-    public String getUser(User user){
+    public ResponseEntity<ResponseDto> getUser(User user){
         User temp = userRepository.findByEmail(user.getEmail());
         if(temp != null){
-            if(temp.getPassword().equals(user.getPassword())) return "User Successfully logged in";
-            else return "Password or email Incorrect";
+            if(temp.getPassword().equals(user.getPassword())){
+                return new ResponseEntity<>(new ResponseDto("User Successfully logged in"), HttpStatus.FOUND);
+            }
+            else{
+                return new ResponseEntity<>(new ResponseDto("Password or email Incorrect"), HttpStatus.NOT_ACCEPTABLE);
+            }
         }
-        return "Email doesn't exist";
+        return new ResponseEntity<>(new ResponseDto("Email doesn't exist"), HttpStatus.NOT_FOUND);
     }
 
     public List<User> getAllUser() {
         return userRepository.findAll();
     }
 
-    public String updatePassword(User user) {
+    public ResponseEntity<ResponseDto> updatePassword(User user) {
         User temp = userRepository.findByEmail(user.getEmail());
         if(temp == null){
-            return "User doesn't exist";
+            return new ResponseEntity<>(new ResponseDto("Email doesn't exist"), HttpStatus.NOT_FOUND);
         }
         else if(temp.getPassword().equals(user.getPassword())){
             userRepository.updatePassword(user.getEmail(),user.getNewPassword());
-            return  "Password updated successfully.";
+            return new ResponseEntity<>(new ResponseDto("Password updated successfully."), HttpStatus.ACCEPTED);
         }
         else{
-            return "Email and Password do not match.";
+            return new ResponseEntity<>(new ResponseDto("Password or email Incorrect"), HttpStatus.NOT_ACCEPTABLE);
         }
     }
 
-    public String deleteUser(User user) {
+    public ResponseEntity<ResponseDto> deleteUser(User user) {
         User temp = userRepository.findByEmail(user.getEmail());
         if(temp == null){
-            return "User doesn't exist";
+            return new ResponseEntity<>(new ResponseDto("Email doesn't exist"), HttpStatus.NOT_FOUND);
         }
         else if(temp.getPassword().equals(user.getPassword())){
             userRepository.deleteAccount(user.getEmail());
-            return  "Account deleted successfully.";
+            return new ResponseEntity<>(new ResponseDto("Account deleted successfully."), HttpStatus.ACCEPTED);
         }
         else{
-            return "Email and Password do not match.";
+            return new ResponseEntity<>(new ResponseDto("Password or email Incorrect"), HttpStatus.NOT_ACCEPTABLE);
         }
     }
 }
